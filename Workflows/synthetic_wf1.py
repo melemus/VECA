@@ -1,3 +1,39 @@
+"""
+Synthetic PGen Genomic Variation Workflow
+-----------------------------------------
+
+This script simulates a complex, multi-stage genomic variation analysis pipeline inspired by PGen.
+It is designed for benchmarking, validation, and demonstration of resource allocation strategies
+in distributed or Volunteer Edge-Cloud (VEC) environments.
+
+Workflow Features:
+    - 10 modular stages reflecting real-world genomic analysis steps:
+        1. Quality Control
+        2. Adapter Trimming
+        3. Read Alignment
+        4. Duplicate Marking
+        5. Base Quality Recalibration
+        6. Variant Calling
+        7. Variant Filtration
+        8. Variant Annotation
+        9. CNV Analysis
+        10. Integration & Reporting
+    - Each stage is configurable for:
+        - Simulated execution time per read
+        - Number of CPU cores (1–8)
+        - Memory requirement (1–10 GB)
+    - No real genomic data or external tools required
+
+Usage:
+    - Adjust the STAGE_CONFIGS dictionary to modify resource requirements or timing.
+    - Run the script to simulate the workflow and print stage-wise and total execution times.
+
+Intended Use:
+    - Benchmarking and validating resource scheduling algorithms
+    - Workflow prototyping and educational demonstrations
+    - Performance evaluation in edge, cloud, or hybrid environments
+"""
+
 import multiprocessing as mp
 import time
 
