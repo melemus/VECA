@@ -1,6 +1,6 @@
 SYNTHETIC SCIENTIFIC WORKFLOWS
 
-This folder contains the code of synthetic scientific workflows similar to the ones used to validate the effectivenes of the methods used to slect and allocate resources withihn a Volunteer Edge-Cloud (VEC) environment. 
+This directory contains code for synthetic scientific workflows designed to emulate real-world bioinformatics pipelines. These workflows are intended for validating and benchmarking methods for resource selection and allocation within a Volunteer Edge-Cloud (VEC) environment. By simulating the computational and memory demands of genomic analyses, these synthetic workflows enable controlled, repeatable experiments to assess the effectiveness of VEC-based scheduling and orchestration strategies.
 
 * Synthetic 1: A PGen Genomic Variation Workflow
 
