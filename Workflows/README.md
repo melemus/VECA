@@ -1,5 +1,4 @@
 SYNTHETIC SCIENTIFIC WORKFLOWS
-#Workflows
 
 This folder contains the code of synthetic scientific workflows similar to the ones used to validate the effectivenes of the methods used to slect and allocate resources withihn a Volunteer Edge-Cloud (VEC) environment. 
 
