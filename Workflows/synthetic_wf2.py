@@ -1,3 +1,32 @@
+"""
+Synthetic RNA-Seq Analysis Workflow
+-----------------------------------
+
+This script simulates a simplified RNA-Seq data analysis pipeline, suitable for
+testing, benchmarking, and educational purposes in distributed or Volunteer Edge-Cloud (VEC) environments.
+
+Workflow Features:
+    - 4 modular stages reflecting key RNA-Seq analysis steps:
+        1. Quality Control
+        2. Read Alignment
+        3. Quantification
+        4. Differential Expression Analysis
+    - Each stage is configurable for:
+        - Simulated execution time per read
+        - Number of CPU cores (1–5)
+        - Memory requirement (1–10 GB)
+    - No real sequencing data or external bioinformatics tools required
+
+Usage:
+    - Adjust the STAGE_CONFIGS dictionary to modify resource requirements or timing.
+    - Run the script to simulate the workflow and print stage-wise and total execution times.
+
+Intended Use:
+    - Benchmarking and validating resource allocation strategies
+    - Workflow prototyping and educational demonstrations
+    - Performance evaluation in distributed computing environments
+"""
+
 import multiprocessing as mp
 import time
 
